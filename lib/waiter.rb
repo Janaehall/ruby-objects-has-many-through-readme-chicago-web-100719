@@ -1,3 +1,5 @@
+require 'pry'
+
 class Waiter
   attr_reader :name, :yrs_experience
 
@@ -25,6 +27,8 @@ class Waiter
     sorted = self.meals.sort{|a, b| a.tip <=> b.tip}
     sorted[0].customer
   end
+
+  binding.pry
 
 
 end
