@@ -15,4 +15,10 @@ class Meal
     @@all
   end
 
+  def meals
+    Meals.all.select do |meal|
+      meal.customer == self
+    end
+  end
+
 end
