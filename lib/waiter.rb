@@ -27,7 +27,7 @@ class Waiter
 
   def best_tipper
     sorted = self.meals.sort{|a, b| a.tip <=> b.tip}
-    sorted[0].customer
+    sorted[-1].customer
   end
 
   binding.pry
