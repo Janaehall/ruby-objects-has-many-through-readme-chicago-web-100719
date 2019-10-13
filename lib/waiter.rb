@@ -1,4 +1,6 @@
 require 'pry'
+require_relative 'meal'
+require_relative 'customer'
 
 class Waiter
   attr_reader :name, :yrs_experience
