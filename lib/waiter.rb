@@ -22,7 +22,7 @@ class Waiter
   end
 
   def best_tipper
-    sorted = Meal.all.sort{|a, b| a.tip <=> b.tip}
+    sorted = meals.sort{|a, b| a.tip <=> b.tip}
     sorted[0].customer
   end
 
